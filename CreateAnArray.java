@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class CreateAnArray {
     public static int[] createArray() {
         Scanner in = new Scanner(System.in);
@@ -14,10 +13,5 @@ public class CreateAnArray {
         }
         return array;
     }
-    public static void main(String[] args) {
-        int[] array = createArray();
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i] + " ");
-        }
-    }
+
 }
