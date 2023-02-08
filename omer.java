@@ -20,13 +20,25 @@ public class omer {
             System.out.println("4- Find the sum of elements with odd- and even-numbered indexes");
             System.out.println("5- Exit ");
             int option = in.nextInt();
-            if (option == 6) {
+            if (option == 5) {
                 System.out.println("Program has finished.");
                 isDone = true;
             } else if (option == 1) {
                 System.out.println("Min value in array: " + assignment.findMin(newArray));
                 System.out.println("Max value in array: " + assignment.findMax(newArray));
+            } else if (option == 2) {
+                System.out.println("Average of the array: " + average.getAverage(newArray));
+            } else if (option == 3) {
+                int[] new_array = average.getNewArray(newArray);
+                System.out.println("Difference of an array from an average: ");
+                for (int i = 0; i < newArray.length - 1; i++) {
+                    System.out.print(new_array[i] + ", ");
+                }
+                System.out.println(new_array[newArray.length - 1]);
 
+            } else if (option == 4) {
+                System.out.println("Sum of the even numbers: " + Colaboration.evenSum(newArray));
+                System.out.println("Sum of the odd numbers: " + Colaboration.oddSum(newArray));
             }
         }
 
